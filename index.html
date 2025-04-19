@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Seilerloggen</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Seilerloggen</h1>
+    <a href="history.html" class="history-btn">Se historikk</a>
+  </header>
+
+  <div id="map" class="map"></div>
+
+  <section class="stats-container">
+    <div class="stat-row-large">
+      <div class="stat-item">
+        <span class="stat-label">Distanse</span>
+        <span id="distance" class="stat-value">0.00 NM</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Tid</span>
+        <span id="time" class="stat-value">00:00</span>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-item-small">
+        <span class="stat-label-small">Fart nå</span>
+        <span id="currentSpeed" class="stat-value-small">0.0 kt</span>
+      </div>
+      <div class="stat-item-small">
+        <span class="stat-label-small">Maks fart</span>
+        <span id="maxSpeed" class="stat-value-small">0.0 kt</span>
+      </div>
+      <div class="stat-item-small">
+        <span class="stat-label-small">Snittfart</span>
+        <span id="avgSpeed" class="stat-value-small">0.0 kt</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="controls">
+    <button id="startBtn" class="btn-primary">Start</button>
+    <button id="stopBtn" class="btn-secondary" disabled>Stopp</button>
+  </section>
+
+  <!-- Modal for navngi tur -->
+  <div id="nameModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>Navngi turen</h2>
+      <input type="text" id="tripName" placeholder="Søndagstur Askøy Seilforening" />
+      <button id="saveBtn" class="btn-primary">Lagre</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* Felles */
+body, html {
+  margin: 0; padding: 0;
+  font-family: sans-serif;
+  background: #E0F7FA;
+}
+header {
+  text-align: center;
+  padding: 1rem;
+  background: #1E3A8A;
+  color: #fff;
+  position: relative;
+}
+header h1 { margin: 0; font-size: 1.5rem; }
+.history-btn, .back-btn {
+  position: absolute; right: 1rem; top: 1rem;
+  background: #93C5FD; color: #fff; border: none;
+  padding: .5rem 1rem; border-radius: 6px;
+  text-decoration: none; font-weight: bold;
+}
+.map { height: 60vh; }
+
+/* Stats */
+.stats-container {
+  background: #fff; border-top: 1px solid #1E3A8A;
+  padding: .5rem;
+}
+.stat-row-large { display: flex; justify-content: space-around; }
+.stat-item, .stat-item-small {
+  text-align: center; margin: .5rem;
+}
+.stat-label { font-size: .9rem; color: #1E3A8A; }
+.stat-value { font-size: 1.2rem; font-weight: bold; }
+.stat-label-small { font-size: .8rem; color: #1E3A8A; }
+.stat-value-small { font-size: 1rem; }
+
+/* Controls */
+.controls {
+  display: flex; justify-content: space-around;
+  padding: 1rem; background: #fff;
+}
+.btn-primary {
+  background: #1E3A8A; color: #fff; border: none;
+  padding: .75rem 2rem; border-radius: 8px;
+  font-size: 1rem;
+}
+.btn-secondary {
+  background: #93C5FD; color: #fff; border: none;
+  padding: .75rem 2rem; border-radius: 8px;
+  font-size: 1rem;
+}
+button:disabled { opacity: .6; cursor: not-allowed; }
+
+/* Modal */
+.modal {
+  position: fixed; top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.5);
+  display: flex; justify-content: center; align-items: center;
+}
+.modal.hidden { display: none; }
+.modal-content {
+  background: #fff; padding: 2rem; border-radius: 12px;
+  width: 90%; max-width: 400px; text-align: center;
+}
+.modal-content input {
+  width: 100%; padding: .5rem; margin-top: 1rem;
+  border: 1px solid #1E3A8A; border-radius: 6px;
+}
+.filter {
+  display: flex; justify-content: center; gap: 1rem;
+  padding: 1rem; background: #93C5FD;
+}
+.filter input {
+  padding: .5rem; border-radius: 6px; border: none;
+}
+.trips-list {
+  padding: 1rem;
+}
+.trip-card {
+  background: #fff; margin-bottom: 1rem; padding: 1rem;
+  border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.trip-header {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.trip-header h3 { margin: 0; color: #1E3A8A; }
+.trip-header button {
+  background: transparent; border: none; font-size: 1.2rem; color: #DC2626;
+  cursor: pointer;
+}

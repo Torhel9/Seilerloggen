@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Historikk</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tidligere turer</h1>
+    <button onclick="window.location='index.html'" class="btn-secondary">&larr; Tilbake</button>
+  </header>
+
+  <section class="filter">
+    <label>Fra: <input type="date" id="fromDate" /></label>
+    <label>Til: <input type="date" id="toDate" /></label>
+  </section>
+
+  <div id="tripsList" class="trips-list"></div>
+
+  <footer class="stats-container">
+    <div class="stat-row-large">
+      <div class="stat-item">
+        <span class="stat-label">Total Distanse</span>
+        <span id="totalDistance" class="stat-value">0.00 NM</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Total Tid</span>
+        <span id="totalTime" class="stat-value">00:00</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/history.js" defer></script>
+</body>
+</html>
